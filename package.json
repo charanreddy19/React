@@ -1,0 +1,33 @@
+{
+  "name": "react-basic-app",
+  "version": "1.0.0",
+  "description": "react app by charan",
+  "scripts": {
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charanreddy19/React.git"
+  },
+  "keywords": [],
+  "author": "charan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charanreddy19/React/issues"
+  },
+  "homepage": "https://github.com/charanreddy19/React#readme",
+  "devDependencies": {
+    "parcel": "^2.10.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "node": "21.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
