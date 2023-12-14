@@ -8,10 +8,15 @@
     border: 1px solid black;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .res-card:hover {
     border: 2px solid black;
     cursor: pointer;
+    text-overflow: clip;
+    white-space: normal;
+    word-break: break-all;
 }
 .res-img {
     width: 100%;
@@ -20,4 +25,24 @@
 }
 .card-container {
     display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+    height: 200px;
+    width: 100px;
+    background-color: aliceblue;
+    margin: 20px;
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-button {
+    padding: 5px 5px;
+    height: 30px;
 }

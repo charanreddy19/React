@@ -1,10 +1,10 @@
 const ResCard = (props) => {
-    const {name , rating, cuisine, imgAddress} = props.resDetails
+    const {name , avgRating, cuisines, cloudinaryImageId} = props.resDetails.info
     return (<div className="res-card">
-        <img className="res-img" src="https://images.theconversation.com/files/529655/original/file-20230601-21-meilfi.jpg?ixlib=rb-1.1.0&rect=3%2C130%2C2114%2C1057&q=45&auto=format&w=668&h=324&fit=crop"/>
+        <img className="res-img" src={'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/'+cloudinaryImageId}/>
         <span>{name}</span>
-        <span>{rating}</span>
-        <span>{cuisine}</span>
+        <span>{avgRating}</span>
+        <span>{cuisines}</span>
     </div>)
 }
 export default ResCard;
